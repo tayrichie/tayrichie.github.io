@@ -1,0 +1,21 @@
+.card {
+  display: block;
+  margin: 1em auto;
+  padding: 2em;
+  max-width: 25em;
+  box-shadow: $boxShadow;
+  border-radius: $borderRadius;
+}
+
+.nav {
+  &-wrapper {
+    margin: 0.125em;
+    padding: 0.125em 0;
+    // border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+  }
+
+  &-body {
+    text-align: right;
+  }
+}
