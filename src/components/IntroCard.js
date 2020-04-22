@@ -7,7 +7,10 @@ export default class IntroCard extends Component {
       <div className="card">
         <div className="card-title">
           <h1>
-            Hi, I'm Taylor <span role="img">👋</span>
+            Hi, I'm Taylor{" "}
+            <span role="img" aria-label="wave emoji">
+              👋
+            </span>
           </h1>
         </div>
         <div className="card-body">

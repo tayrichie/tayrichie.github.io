@@ -23,11 +23,12 @@ export default class Experience extends Component {
       "React",
     ];
     const inProgress = [
+      "WCAG 2.0",
+      "WCAG 2.1",
+      "Vue.js",
       "Angular",
       "C#",
-      "WCAG Guidelines",
       "CSS Animation",
-      "Vue.js",
     ];
     const related = [
       "VS Code",

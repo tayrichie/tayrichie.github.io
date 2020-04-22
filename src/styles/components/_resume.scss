@@ -1,4 +1,10 @@
 .resume {
+  &-card-wrapper {
+    & + & {
+      margin-top: 3em;
+    }
+  }
+
   &-tags {
     padding: 0;
     margin: 0;
@@ -9,9 +15,9 @@
     display: inline-block;
     list-style: none;
     border: 2px solid $accent;
-    font-size: 0.875em;
-    padding: 0.25em;
-    margin-right: 0.25em;
-    margin-bottom: 0.25em;
+    font-size: 0.75em;
+    padding: 0.3em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
   }
 }
