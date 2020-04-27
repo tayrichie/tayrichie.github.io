@@ -21,6 +21,7 @@ export default class Experience extends Component {
       "Parcel",
       "Storybook",
       "React",
+      "Gatsby",
     ];
     const inProgress = [
       "WCAG 2.0",
