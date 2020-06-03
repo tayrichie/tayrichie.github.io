@@ -7,7 +7,7 @@ export default class Nav extends Component {
       <div className="nav-wrapper">
         <nav className="nav-body">
           <Link to="/" exact>
-            Home
+            About
           </Link>
         </nav>
       </div>

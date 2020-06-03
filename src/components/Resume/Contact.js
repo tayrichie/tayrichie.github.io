@@ -5,7 +5,7 @@ import ResumeCard from "./ResumeCard";
 export default class Experience extends Component {
   render() {
     return (
-      <ResumeSection title="Contact Me">
+      <ResumeSection id="contact" title="Contact Me">
         <ResumeCard title="" subtitle="" titleNotes="">
           Find me on{" "}
           <a
@@ -24,6 +24,20 @@ export default class Experience extends Component {
             LinkedIn
           </a>
           .
+          <br />
+          <br />
+          <div className="disclaimer">
+            Icons from{" "}
+            <a
+              href="https://www.flaticon.com/"
+              title="Flaticon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.flaticon.com
+            </a>
+            .
+          </div>
         </ResumeCard>
       </ResumeSection>
     );

@@ -10,7 +10,11 @@ export default class ResumeCard extends Component {
             <p>
               <strong>{this.props.subtitle}</strong>{" "}
               {this.props.subtitle && this.props.titleNotes && "/"}{" "}
-              {this.props.titleNotes}
+              {this.props.titleNotes && (
+                <span className="resume-card-note">
+                  {this.props.titleNotes}
+                </span>
+              )}
             </p>
           )}
         </div>

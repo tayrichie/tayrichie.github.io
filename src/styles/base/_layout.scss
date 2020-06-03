@@ -1,20 +1,56 @@
+body,
+html {
+  background: $light-gray;
+}
+
 .card {
+  position: relative;
   display: block;
   margin: 1em auto;
-  padding: 2em;
-  max-width: 25em;
-  box-shadow: $boxShadow;
-  border-radius: $borderRadius;
+  padding: 2em 1em;
+  max-width: 28em;
+
+  &-large {
+    max-width: 40em;
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 1em;
+    row-gap: 3em;
+
+    @media (max-width: 640px) {
+      row-gap: 2em;
+    }
+  }
+}
+
+.fillIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+
+  img {
+    max-width: 150px;
+    height: auto;
+  }
 }
 
 .nav {
   &-wrapper {
     margin: 0.125em;
+    margin-bottom: 2em;
     padding: 0.125em 0;
     border-bottom: 1px solid $light-gray;
   }
 
   &-body {
-    text-align: right;
+    text-align: center;
   }
 }

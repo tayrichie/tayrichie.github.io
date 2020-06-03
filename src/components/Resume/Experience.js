@@ -5,7 +5,7 @@ import ResumeCard from "./ResumeCard";
 export default class Experience extends Component {
   render() {
     return (
-      <ResumeSection title="Experience">
+      <ResumeSection id="experience" title="Experience">
         <ResumeCard
           title="Developer Consultant"
           subtitle="Deque Systems"

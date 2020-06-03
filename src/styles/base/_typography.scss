@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:wght@400;50&display=swap");
 
 :root {
   font-size: 24px;
-  font-family: "Space Mono", monospace;
+  font-family: "Rubik", sans-serif;
   letter-spacing: -0.5px;
   word-spacing: -1.25px;
   line-height: 1.4;
@@ -22,41 +22,39 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Space Mono", monospace;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 a {
-  font-weight: 700;
   color: $primary;
 
   &:hover,
   &:focus {
-    outline: 2px solid $accent;
+    outline: 2px solid $contrast;
     color: $contrast;
   }
 }
 
-h1 {
-  color: $white;
-  text-shadow: 0 1px 1px rgba($black, 0.5);
-  margin: 0;
-  position: relative;
-  line-height: 1.2;
+.emoji {
+  font-size: 0.875em;
 
-  &:before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    left: -0.5em;
-    right: -0.5em;
-    height: 100%;
-    background-color: $contrast;
-    display: block;
+  &-large {
+    font-size: 3em;
   }
 }
 
+h1 {
+  color: $contrast;
+  margin: 0;
+  position: relative;
+  line-height: 1.2;
+  z-index: 0;
+}
+
 h2 {
-  border-bottom: 1px solid $light-gray;
+  margin-top: 0;
+  border-bottom: 1px solid $med-gray;
 }
 
 h3 {
@@ -66,4 +64,8 @@ h3 {
   & + p {
     margin-top: 0.3em;
   }
+}
+
+.disclaimer {
+  font-size: 0.5em;
 }

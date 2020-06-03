@@ -3,7 +3,7 @@ import ResumeSection from "./ResumeSection";
 import ResumeCard from "./ResumeCard";
 import ResumeTags from "./ResumeTags";
 
-export default class Experience extends Component {
+export default class Skills extends Component {
   render() {
     const comfortable = [
       "HTML5",
@@ -35,13 +35,13 @@ export default class Experience extends Component {
       "VS Code",
       "JIRA",
       "Microsoft Office",
-      "Adobe Creative Suite",
+      "Adobe CS",
       "Sketch",
       "Figma",
     ];
 
     return (
-      <ResumeSection title="Experience">
+      <ResumeSection id="skills" title="Skills">
         <ResumeCard title="Comfortable With">
           <ResumeTags list={comfortable} />
         </ResumeCard>
