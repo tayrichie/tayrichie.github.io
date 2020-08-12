@@ -1,50 +1,75 @@
 .resume {
-  &-body {
-    h1 {
-      text-align: center;
-    }
+  // &-body {
+  //   #experience,
+  //   #skills {
+  //     grid-column: 1/4;
+  //   }
 
-    #experience,
-    #skills {
-      grid-column: 1/4;
-    }
+  //   #education,
+  //   #contact {
+  //     grid-column: 2/5;
+  //   }
 
-    #education,
-    #contact {
-      grid-column: 2/5;
-    }
-
-    @media (max-width: 640px) {
-      #experience,
-      #skills,
-      #education,
-      #contact {
-        grid-column: 1/5;
-      }
-    }
-  }
+  //   @media (max-width: 640px) {
+  //     #experience,
+  //     #skills,
+  //     #education,
+  //     #contact {
+  //       grid-column: 1/5;
+  //     }
+  //   }
+  // }
 
   &-card {
+    &-title {
+      h2 {
+        border-bottom: none;
+        margin-bottom: 0;
+        color: $contrast;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    h3 {
+      margin-top: 0.25em;
+      font-family: $sansSerif;
+
+      & + p {
+        margin-top: 0;
+      }
+    }
+
     &-wrapper {
-      outline: 2px dashed $black;
-      padding: 1em;
-      position: relative;
-      background: $white;
-      z-index: 0;
-
-      &:nth-of-type(odd) {
-        box-shadow: 0.5em 0.5em 0 0 $contrast,
-          0.75em 0.75em 0 0 rgba($primary, 0.5);
+      & + & {
+        margin-top: 1em;
       }
+      //     outline: 2px dashed $black;
+      //     padding: 1em;
+      //     position: relative;
+      //     background: $white;
+      //     z-index: 0;
 
-      &:nth-of-type(even) {
-        box-shadow: -0.5em 0.5em 0 0 $contrast,
-          -0.75em 0.75em 0 0 rgba($primary, 0.5);
-      }
+      //     &:nth-of-type(odd) {
+      //       box-shadow: 0.5em 0.5em 0 0 $contrast,
+      //         0.75em 0.75em 0 0 rgba($primary, 0.5);
+      //     }
+
+      //     &:nth-of-type(even) {
+      //       box-shadow: -0.5em 0.5em 0 0 $contrast,
+      //         -0.75em 0.75em 0 0 rgba($primary, 0.5);
+      //     }
     }
 
     &-note {
-      font-size: 0.875em;
+      font-size: 0.875rem;
+    }
+
+    &-body {
+      margin-top: 0;
+      font-size: 0.75rem;
     }
   }
 
@@ -59,7 +84,7 @@
     list-style: none;
     border: 2px solid $contrast;
     background: $white;
-    font-size: 0.75em;
+    font-size: 0.675rem;
     padding: 0.3em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;

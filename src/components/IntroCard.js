@@ -41,7 +41,16 @@ export default class IntroCard extends Component {
                 rel="noopener noreferrer"
               >
                 Github
-              </a>{" "}
+              </a>
+              {", "}
+              <a
+                href="https://twitter.com/_tayrichie"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+              {", "}
               or{" "}
               <a
                 href="https://www.linkedin.com/in/tayrminda/"
@@ -50,7 +59,7 @@ export default class IntroCard extends Component {
               >
                 LinkedIn
               </a>
-              , too.
+              .
             </p>
           </div>
         </div>

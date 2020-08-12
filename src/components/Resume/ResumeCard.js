@@ -18,7 +18,7 @@ export default class ResumeCard extends Component {
             </p>
           )}
         </div>
-        <div className="resume-card-body">{this.props.children}</div>
+        <p className="resume-card-body">{this.props.children}</p>
       </div>
     );
   }

@@ -14,7 +14,16 @@ export default class Experience extends Component {
             rel="noopener noreferrer"
           >
             Github
-          </a>{" "}
+          </a>
+          {", "}
+          <a
+            href="https://twitter.com/_tayrichie"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
+          {", "}
           or{" "}
           <a
             href="https://www.linkedin.com/in/tayrminda/"
@@ -24,20 +33,6 @@ export default class Experience extends Component {
             LinkedIn
           </a>
           .
-          <br />
-          <br />
-          <div className="disclaimer">
-            Icons from{" "}
-            <a
-              href="https://www.flaticon.com/"
-              title="Flaticon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.flaticon.com
-            </a>
-            .
-          </div>
         </ResumeCard>
       </ResumeSection>
     );
