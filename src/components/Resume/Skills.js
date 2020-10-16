@@ -21,10 +21,11 @@ export default class Skills extends Component {
       "Parcel",
       "Storybook",
       "React",
+      "Vue",
+      "Angular",
       "Gatsby",
-      "Vue.js",
     ];
-    const inProgress = ["WCAG 2.0", "WCAG 2.1", "Angular", "C#"];
+    const inProgress = ["WCAG 2.0", "WCAG 2.1", "Java", "C#"];
     const related = [
       "VS Code",
       "JIRA",

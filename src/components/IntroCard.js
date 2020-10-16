@@ -6,7 +6,7 @@ export default class IntroCard extends Component {
   render() {
     return (
       <DocumentTitle title="About Taylor Richards">
-        <div className="card">
+        <div className="card intro-card">
           <div className="card-title">
             <h1>
               {/* Hi, I'm Taylor{" "} */}

@@ -6,7 +6,7 @@ export default class Nav extends Component {
     return (
       <div className="nav-wrapper">
         <nav className="nav-body">
-          <Link to="/" exact>
+          <Link to="/about">
             ← Learn About Me
           </Link>
         </nav>
