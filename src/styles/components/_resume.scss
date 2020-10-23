@@ -1,25 +1,4 @@
 .resume {
-  // &-body {
-  //   #experience,
-  //   #skills {
-  //     grid-column: 1/4;
-  //   }
-
-  //   #education,
-  //   #contact {
-  //     grid-column: 2/5;
-  //   }
-
-  //   @media (max-width: 640px) {
-  //     #experience,
-  //     #skills,
-  //     #education,
-  //     #contact {
-  //       grid-column: 1/5;
-  //     }
-  //   }
-  // }
-
   &-card {
     &-title {
       h2 {
@@ -46,21 +25,6 @@
       & + & {
         margin-top: 1em;
       }
-      //     outline: 2px dashed $black;
-      //     padding: 1em;
-      //     position: relative;
-      //     background: $white;
-      //     z-index: 0;
-
-      //     &:nth-of-type(odd) {
-      //       box-shadow: 0.5em 0.5em 0 0 $contrast,
-      //         0.75em 0.75em 0 0 rgba($primary, 0.5);
-      //     }
-
-      //     &:nth-of-type(even) {
-      //       box-shadow: -0.5em 0.5em 0 0 $contrast,
-      //         -0.75em 0.75em 0 0 rgba($primary, 0.5);
-      //     }
     }
 
     &-note {

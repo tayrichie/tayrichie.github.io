@@ -20,27 +20,8 @@ export default function ResumeCard() {
         <Nav />
         <div className="card-body">
           <Experience />
-
-          {/* <Suspense>
-            <div className="fillIn" aria-hidden="true">
-              <img alt="" src={backpack} />
-            </div>
-            <div className="fillIn" aria-hidden="true">
-              <img alt="" src={gradcap} />
-            </div>
-          </Suspense> */}
           <Education />
-
           <Skills />
-          {/* <Suspense>
-            <div className="fillIn" aria-hidden="true">
-              <img alt="" src={key} />
-            </div>
-
-            <div className="fillIn" aria-hidden="true">
-              <img alt="" src={contact} />
-            </div>
-          </Suspense> */}
           <Contact />
         </div>
       </div>

@@ -9,16 +9,12 @@ export default class IntroCard extends Component {
         <div className="card intro-card">
           <div className="card-title">
             <h1>
-              {/* Hi, I'm Taylor{" "} */}
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 59">
                 <defs/>
                 <text fill="#000" fill-rule="evenodd" font-family="PlayfairDisplay-Regular_Bold, Playfair Display" font-size="60" font-weight="bold" transform="translate(-40 -111)">
                   <tspan x="39.038201" y="158">hi, i’m taylor</tspan>
                 </text>
               </svg>
-              {/* <span className="emoji" role="img" aria-label="wave emoji">
-                👋
-              </span> */}
             </h1>
           </div>
           <div className="card-body">
