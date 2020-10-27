@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { StyledRouterLink } from "../styles/components/link";
 
 export default class Nav extends Component {
-  render() {
-    return (
-      <div className="nav-wrapper">
-        <nav className="nav-body">
-          <Link to="/about">
-            ← Learn About Me
-          </Link>
-        </nav>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <nav>
+                    <StyledRouterLink to="/about">
+                        ← Learn About Me
+                    </StyledRouterLink>
+                </nav>
+            </div>
+        );
+    }
 }

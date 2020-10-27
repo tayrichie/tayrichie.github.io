@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Work+Sans:ital,wght@0,400;0,600;1,400&family=Arima+Madurai:wght@900&display=swap");
 
 :root {
-  font-size: 24px;
-  font-family: "Work Sans", sans-serif;
-  letter-spacing: -0.5px;
-  word-spacing: -1.25px;
-  line-height: 1.4;
-  // text-transform: lowercase;
+    font-size: 24px;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: -0.5px;
+    word-spacing: -1.25px;
+    line-height: 1.4;
 
-  @media only (max-width: 640px) {
-    font-size: 18px;
-  }
+    @media only (max-width: 640px) {
+        font-size: 18px;
+    }
 }
 
 h1,
@@ -19,64 +18,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
-  letter-spacing: 0.5px;
-}
-
-h1,
-h2 {
-  text-transform: lowercase;
+    font-family: "Arima Madurai", cursive;
+    letter-spacing: 0.5px;
 }
 
 html,
 body,
 p {
-  font-family: "Work Sans", sans-serif;
-  letter-spacing: 0.5px;
-  color: $black;
-}
-
-a {
-  color: $contrast;
-
-  &:hover,
-  &:focus {
-    outline: 2px solid $primary;
-    color: $primary;
-  }
-}
-
-.emoji {
-  font-size: 0.875em;
-
-  &-large {
-    font-size: 3em;
-  }
-}
-
-h1 {
-  // color: $contrast;
-  margin: 0;
-  position: relative;
-  line-height: 1.2;
-  z-index: 0;
-  font-size: 3rem;
-}
-
-h2 {
-  margin-top: 0;
-  border-bottom: 1px solid $med-gray;
-}
-
-h3 {
-  color: $primary;
-  margin-bottom: 0;
-
-  & + p {
-    margin-top: 0.3em;
-  }
-}
-
-.disclaimer {
-  font-size: 0.5em;
+    font-family: "Work Sans", sans-serif;
 }

@@ -25,7 +25,7 @@ export default class Skills extends Component {
       "Angular",
       "Gatsby",
     ];
-    const inProgress = ["WCAG 2.0 & 2.1", "Java", "C#", "PHP"];
+    const inProgress = ["WCAG 2.0 & 2.1", "Java", "C#", "PHP", "Python"];
     const related = [
       "VS Code",
       "JIRA",
