@@ -14,6 +14,11 @@ const StyledTag = styled.li`
         margin-right: 0.5em;
         margin-bottom: 0.5em;
     }
+
+    @media print {
+        background: ${(props) => props.theme.white};
+        color: ${(props) => props.theme.black};
+    }
 `;
 
 export default StyledTag;

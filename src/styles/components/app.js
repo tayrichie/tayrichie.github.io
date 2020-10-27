@@ -9,10 +9,13 @@ const StyledApp = styled.div`
 
     @media screen and (max-width: 1100px) {
         padding: 1em 3em;
+        min-height: calc(100vh - 2em);
     }
 
     @media screen and (max-width: 600px) {
-        padding: 0.5em 0.5em;
+        padding: 3em 0.5em 0.5em;
+        min-height: calc(100vh - 1em);
+        display: block;
     }
 
     div,
@@ -23,6 +26,17 @@ const StyledApp = styled.div`
 
     svg {
         fill: ${(props) => props.theme.contrast};
+    }
+
+    @media print {
+        min-height: auto;
+        padding: 1rem;
+        background: ${(props) => props.theme.white};
+
+        div,
+        p {
+            color: ${(props) => props.theme.black};
+        }
     }
 `;
 

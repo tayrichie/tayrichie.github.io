@@ -9,6 +9,7 @@ const partyTheme = {
     border: "#ccc",
     maxWidth: "860px",
     white: "#fff",
+    black: "#000",
 };
 
 const darkTheme = {
@@ -22,6 +23,7 @@ const darkTheme = {
     border: "#ccc",
     maxWidth: "860px",
     white: "#fff",
+    black: "#000",
 };
 
 const theme = {
@@ -35,6 +37,7 @@ const theme = {
     border: "#ccc",
     maxWidth: "860px",
     white: "#fff",
+    black: "#000",
 };
 
 export { theme, darkTheme, partyTheme };
