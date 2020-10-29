@@ -3,7 +3,7 @@ import styled from "styled-components";
 const StyledTag = styled.li`
     display: inline-block;
     padding: 0.5em;
-    border: 2px solid ${(props) => props.theme.accent};
+    border: 2px solid ${(props) => props.theme.primary};
     background: ${(props) => props.theme.primary};
     color: ${(props) => props.theme.background};
     font-size: 0.675rem;

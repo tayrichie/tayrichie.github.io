@@ -18,14 +18,28 @@ const StyledApp = styled.div`
         display: block;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: ${(props) => props.theme.serif};
+    }
+
+    strong {
+        font-family: ${(props) => props.theme.serif};
+    }
+
     div,
     p {
         color: ${(props) => props.theme.text};
-        letter-spacing: 0.25px;
+        font-family: ${(props) => props.theme.sansSerif};
     }
 
     svg {
         fill: ${(props) => props.theme.contrast};
+        letter-spacing: -3px;
     }
 
     @media print {
@@ -40,4 +54,8 @@ const StyledApp = styled.div`
     }
 `;
 
-export default StyledApp;
+const Wrapper = styled.div`
+    max-width: ${(props) => props.theme.maxWidth};
+`;
+
+export { StyledApp, Wrapper };

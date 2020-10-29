@@ -10,7 +10,8 @@ const StyledH1 = styled.h1`
 
 const StyledH2 = styled.h2`
     color: ${(props) => props.theme.contrast};
-    margin-top: 0;
+    margin-top: 1.5em;
+    margin-bottom: 0;
     /* border-bottom: 1px solid ${(props) => props.theme.border}; */
     font-size: 1.75rem;
 `;

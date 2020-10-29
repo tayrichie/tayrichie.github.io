@@ -6,6 +6,7 @@ import Contact from "../components/Resume/Contact";
 import Nav from "../components/Nav";
 import DocumentTitle from "react-document-title";
 import { StyledH1 } from "../styles/base/typography";
+import { Wrapper } from "../styles/components/app";
 
 export default function ResumeCard() {
     useEffect(() => {
@@ -14,18 +15,18 @@ export default function ResumeCard() {
 
     return (
         <DocumentTitle title="Taylor Richards' Resume">
-            <div className="card">
-                <div className="card-title">
-                    <StyledH1 id="resume-title">Taylor's Resume</StyledH1>
-                </div>
+            <Wrapper>
+                <StyledH1 id="resume-title" tabindex="-1">
+                    Taylor's Resume
+                </StyledH1>
+
                 <Nav />
-                <div className="card-body">
-                    <Experience />
-                    <Education />
-                    <Skills />
-                    <Contact />
-                </div>
-            </div>
+
+                <Experience />
+                <Education />
+                <Skills />
+                <Contact />
+            </Wrapper>
         </DocumentTitle>
     );
 }
