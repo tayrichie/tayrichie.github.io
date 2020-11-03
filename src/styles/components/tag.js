@@ -3,9 +3,9 @@ import styled from "styled-components";
 const StyledTag = styled.li`
     display: inline-block;
     padding: 0.5em;
-    border: 2px solid ${(props) => props.theme.primary};
-    background: ${(props) => props.theme.primary};
-    color: ${(props) => props.theme.background};
+    border: 2px solid var(--colors-primary);
+    background: var(--colors-primary);
+    color: var(--colors-background);
     font-size: 0.675rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -16,8 +16,8 @@ const StyledTag = styled.li`
     }
 
     @media print {
-        background: ${(props) => props.theme.white};
-        color: ${(props) => props.theme.black};
+        background: var(--colors-white);
+        color: var(--colors-black);
     }
 `;
 

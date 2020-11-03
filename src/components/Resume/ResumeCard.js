@@ -13,7 +13,7 @@ const StyledResumeCardTitle = styled.div`
     }
 `;
 
-const StyledResumeCardBody = styled.p`
+const StyledResumeCardBody = styled.div`
     font-size: 0.8rem;
     margin-top: 0;
 `;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Experience from "../components/Resume/Experience";
 import Education from "../components/Resume/Education";
 import Skills from "../components/Resume/Skills";
@@ -9,16 +9,10 @@ import { StyledH1 } from "../styles/base/typography";
 import { Wrapper } from "../styles/components/app";
 
 export default function ResumeCard() {
-    useEffect(() => {
-        document.querySelector("#resume-title").focus();
-    });
-
     return (
         <DocumentTitle title="Taylor Richards' Resume">
             <Wrapper>
-                <StyledH1 id="resume-title" tabindex="-1">
-                    Taylor's Resume
-                </StyledH1>
+                <StyledH1 tabIndex="-1">Taylor's Resume</StyledH1>
 
                 <Nav />
 

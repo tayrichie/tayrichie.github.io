@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles/styles.scss";
-import { ThemeProvider } from "styled-components";
-import { theme, darkTheme, partyTheme } from "./styles/theme";
 import { StyledApp } from "./styles/components/app";
+import GlobalStyles from "./styles/styles";
 
 import {
     HashRouter as Router,
@@ -16,66 +15,57 @@ import ResumeCard from "./pages/ResumeCard";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 
 function App() {
-    const [userTheme, setUserTheme] = useState(darkTheme);
+    const [userTheme, setUserTheme] = useState(getCookieValue());
+    const nextTheme = userTheme === "light" ? "dark" : "light";
 
     useEffect(() => {
-        console.log(document.cookie);
-        const cookies = document.cookie.split("; ");
-        const userTheme = cookies
-            .filter((cookie) => cookie.includes("theme"))[0]
-            .replace("theme=", "");
+        document.body.dataset.theme = userTheme;
+    }, [userTheme]);
 
-        determineTheme(userTheme);
-    });
+    function getCookieValue() {
+        const nameString = "theme=";
 
-    const setCookie = (theme) => {
-        document.cookie = `theme=${theme}`;
-        console.log(document.cookie);
-    };
+        const value = document.cookie.split("; ").filter((item) => {
+            return item.includes(nameString);
+        });
 
-    const toggleTheme = (e) => {
-        determineTheme(e.target.id);
-    };
-
-    const determineTheme = (themeName) => {
-        switch (themeName) {
-            case "light":
-                setCookie("light");
-                setUserTheme(theme);
-                break;
-            case "dark":
-                setCookie("dark");
-                setUserTheme(darkTheme);
-                break;
-            case "party":
-                setCookie("party");
-                setUserTheme(partyTheme);
-                break;
-            default:
-                setUserTheme(darkTheme);
-                break;
+        if (value.length) {
+            return value[0].substring(nameString.length, value[0].length);
+        } else {
+            return "light";
         }
+    }
+
+    function updateCookieValue(theme) {
+        document.cookie = `theme=${theme}`;
+    }
+
+    const toggleTheme = () => {
+        setUserTheme(nextTheme);
+        updateCookieValue(nextTheme);
+        // setTimeout(() => {
+        //     // document.querySelector("h1").focus();
+        // }, 200);
     };
 
     return (
         <Router>
-            <ThemeProvider theme={userTheme}>
-                <StyledApp>
-                    <Switch>
-                        <Route path="/" exact>
-                            <Redirect to="/about" />
-                        </Route>
-                        <Route path="/about">
-                            <IntroCard />
-                        </Route>
-                        <Route path="/resume">
-                            <ResumeCard />
-                        </Route>
-                    </Switch>
-                </StyledApp>
+            <GlobalStyles />
+            <StyledApp>
+                <Switch>
+                    <Route path="/" exact>
+                        <Redirect to="/about" />
+                    </Route>
+                    <Route path="/about">
+                        <IntroCard />
+                    </Route>
+                    <Route path="/resume">
+                        <ResumeCard />
+                    </Route>
+                </Switch>
+            </StyledApp>
 
-                <ThemeSwitcher toggleTheme={toggleTheme} />
-            </ThemeProvider>
+            <ThemeSwitcher toggleTheme={toggleTheme} />
         </Router>
     );
 }

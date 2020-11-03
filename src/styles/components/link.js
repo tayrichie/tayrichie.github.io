@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 const StyledLink = styled.a`
     display: inline-block;
-    color: ${(props) => props.theme.accent};
+    color: var(--colors-accent);
 
     &:hover,
     &:active {
-        color: ${(props) => props.theme.contrast};
+        color: var(--colors-contrast);
     }
 `;
 
 const StyledRouterLink = styled(Link)`
     display: inline-block;
-    color: ${(props) => props.theme.accent};
+    color: var(--colors-accent);
 
     &:hover,
     &:active {
-        color: ${(props) => props.theme.contrast};
+        color: var(--colors-contrast);
     }
 `;
 

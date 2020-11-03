@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledApp = styled.div`
-    background: ${(props) => props.theme.background};
+    background: var(--colors-background);
     min-height: calc(100vh - 4em);
     display: flex;
     align-items: center;
@@ -24,38 +24,38 @@ const StyledApp = styled.div`
     h4,
     h5,
     h6 {
-        font-family: ${(props) => props.theme.serif};
+        font-family: var(--type-serif);
     }
 
     strong {
-        font-family: ${(props) => props.theme.serif};
+        font-family: var(--type-serif);
     }
 
     div,
     p {
-        color: ${(props) => props.theme.text};
-        font-family: ${(props) => props.theme.sansSerif};
+        color: var(--colors-text);
+        font-family: var(--type-sansSerif);
     }
 
     svg {
-        fill: ${(props) => props.theme.contrast};
+        fill: var(--colors-contrast);
         letter-spacing: -3px;
     }
 
     @media print {
         min-height: auto;
         padding: 1rem;
-        background: ${(props) => props.theme.white};
+        background: var(--colors-white);
 
         div,
         p {
-            color: ${(props) => props.theme.black};
+            color: var(--colors-black);
         }
     }
 `;
 
 const Wrapper = styled.div`
-    max-width: ${(props) => props.theme.maxWidth};
+    max-width: var(--width-maxWidth);
 `;
 
 export { StyledApp, Wrapper };

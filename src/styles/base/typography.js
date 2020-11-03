@@ -3,13 +3,13 @@ import styled from "styled-components";
 const StyledH1 = styled.h1`
     display: block;
     margin: 0;
-    color: ${(props) => props.theme.contrast};
+    color: var(--colors-contrast);
     line-height: 1.2;
     font-size: 3rem;
 `;
 
 const StyledH2 = styled.h2`
-    color: ${(props) => props.theme.contrast};
+    color: var(--colors-contrast);
     margin-top: 1.5em;
     margin-bottom: 0;
     /* border-bottom: 1px solid ${(props) => props.theme.border}; */
@@ -17,7 +17,7 @@ const StyledH2 = styled.h2`
 `;
 
 const StyledH3 = styled.h3`
-    color: ${(props) => props.theme.accent};
+    color: var(--colors-accent);
     margin-bottom: 0;
 
     & + p {

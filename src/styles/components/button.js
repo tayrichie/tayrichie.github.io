@@ -1,22 +1,38 @@
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-    background: ${(props) => props.theme.accent};
-    border-color: ${(props) => props.theme.accent};
-    color: ${(props) => props.theme.background};
     font-size: 0.85rem;
+    border: 0;
+    padding: 0.5em;
+    border-radius: 50%;
+    transform-origin: center;
+    background: transparent;
+
+    .svg-fill {
+        fill: var(--colors-svgFill);
+    }
 
     &:hover,
     &:active {
-        background: ${(props) => props.theme.contrast};
-        border-color: ${(props) => props.theme.contrast};
-        color: ${(props) => props.theme.background};
+        svg {
+            animation: spin 1.5s ease-in 0s infinite;
+        }
     }
 
     &:focus {
-        background: ${(props) => props.theme.primary};
-        border-color: ${(props) => props.theme.primary};
-        color: ${(props) => props.theme.background};
+        transform: rotate(15deg);
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(180deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 `;
 
